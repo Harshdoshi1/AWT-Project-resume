@@ -1,0 +1,16 @@
+# Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Environment files
+.env
+serviceKey.json
+GCDP.json
+# Operating System files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/*serviceKey.json

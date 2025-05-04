@@ -1,0 +1,271 @@
+/* Dashboard.module.css */
+/* Using theme colors: #191A19, #4E9F3D, #B4BDFF, #D8E9A8 */
+
+.dashboardContainer {
+  padding: 2rem;
+  padding-top: 80px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.dashboardHeader {
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+
+.dashboardTitle {
+  margin-top: 50px;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.gridContainer {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.cardTitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 0;
+  color: #fff;
+}
+
+/* Stat Item Styles */
+.statGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.statItem {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.statIcon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+}
+
+.statValue {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.statLabel {
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Activity Item Styles */
+.activityList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.activityItem {
+  display: flex;
+  align-items: center;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  background: rgba(255, 255, 255, 0.05);
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.activityItem:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.activityIcon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1rem;
+}
+
+.activityIcon.create {
+  background: rgba(78, 159, 61, 0.2);
+  color: #4E9F3D;
+}
+
+.activityIcon.update {
+  background: rgba(180, 189, 255, 0.2);
+  color: #B4BDFF;
+}
+
+.activityIcon.download {
+  background: rgba(216, 233, 168, 0.2);
+  color: #D8E9A8;
+}
+
+.activityContent {
+  flex: 1;
+}
+
+.activityTitle {
+  font-weight: 500;
+  color: #fff;
+}
+
+.activityAction {
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.activityDate {
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.6);
+  margin: 0 1rem;
+}
+
+.activityArrow {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* Deadline Item Styles */
+.deadlineList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.deadlineItem {
+  display: flex;
+  align-items: center;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.deadlineIcon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  color: #B4BDFF;
+}
+
+.deadlineContent {
+  flex: 1;
+}
+
+.deadlineTitle {
+  font-weight: 500;
+  color: #fff;
+}
+
+.deadlineCompany {
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.deadlineDate {
+  text-align: right;
+  font-size: 0.75rem;
+}
+
+.deadlineDays {
+  color: #D8E9A8;
+  font-weight: 500;
+}
+
+/* Buttons */
+.viewAllButton {
+  background: none;
+  border: none;
+  color: #B4BDFF;
+  font-size: 0.875rem;
+  cursor: pointer;
+  padding: 0.25rem 0.5rem;
+}
+
+.addButton {
+  background: rgba(180, 189, 255, 0.2);
+  border: none;
+  color: #B4BDFF;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.addButton:hover {
+  background: rgba(180, 189, 255, 0.3);
+}
+
+/* Progress Bar */
+.progressContainer {
+  grid-column: span 2;
+  margin-top: 1rem;
+}
+
+.progressText {
+  text-align: center;
+  margin-bottom: 0.5rem;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.875rem;
+}
+
+.progressBar {
+  height: 8px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progressFill {
+  height: 100%;
+  border-radius: 4px;
+  transition: width 0.5s ease;
+}

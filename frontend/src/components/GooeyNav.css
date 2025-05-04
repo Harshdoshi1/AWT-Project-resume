@@ -1,0 +1,19 @@
+:root {
+  --color-1: #191A19;
+  --color-2: #4E9F3D;
+  --color-3: #B4BDFF;
+  --color-4: #D8E9A8;
+}
+
+/* Full CSS from original GooeyNav example */
+.gooey-nav-container {
+  position: relative;
+}
+
+.gooey-nav-container nav {
+  display: flex;
+  position: relative;
+  transform: translate3d(0, 0, 0.01px);
+}
+
+/* ... (remaining 100+ lines of CSS) ... */
